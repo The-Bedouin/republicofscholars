@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import DarkVeil from '../DarkVeil';
 
 const resourceCategories = [
   {
@@ -28,7 +29,7 @@ const resourceCategories = [
   {
     title: "Cover Letter Templates",
     icon: "fas fa-envelope-open-text",
-    color: "from-green-500 to-green-600",
+    color: "from-blue-500 to-blue-600",
     resources: [
       {
         title: "Customizable Cover Letter for Legal Roles",
@@ -49,7 +50,7 @@ const resourceCategories = [
   {
     title: "Interview Guides",
     icon: "fas fa-comments",
-    color: "from-purple-500 to-purple-600",
+    color: "from-blue-500 to-blue-600",
     resources: [
       {
         title: "Top 10 Interview Questions for Law Students",
@@ -68,30 +69,9 @@ const resourceCategories = [
     ]
   },
   {
-    title: "Legal Writing Tips",
-    icon: "fas fa-pen-fancy",
-    color: "from-yellow-500 to-yellow-600",
-    resources: [
-      {
-        title: "Guide to Writing Effective Legal Memos",
-        description: "PDF guide with examples and formatting guidelines",
-        type: "PDF",
-        downloadUrl: "#",
-        preview: "legal-memo-guide-preview.jpg"
-      },
-      {
-        title: "Case Brief Writing Template",
-        description: "Structured template for effective case analysis and briefing",
-        type: "PDF",
-        downloadUrl: "#",
-        preview: "case-brief-template-preview.jpg"
-      }
-    ]
-  },
-  {
     title: "Networking for Law Students",
     icon: "fas fa-users",
-    color: "from-red-500 to-red-600",
+    color: "from-blue-500 to-blue-600",
     resources: [
       {
         title: "Building Your Legal Network in Nigeria",
@@ -115,71 +95,44 @@ export default function ResourcesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-[#0e46a5] via-[#1a5bb8] to-[#0e46a5]">
-        {/* Background decoration */}
-        <div className="absolute inset-0 bg-[radial-gradient(600px_300px_at_20%_20%,_rgba(255,255,255,0.1),_transparent_60%),_radial-gradient(600px_300px_at_80%_80%,_rgba(255,215,0,0.1),_transparent_60%)]" aria-hidden="true"></div>
+      <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-[--color-brand-500] via-[--color-brand-600] to-[--color-brand-700]">
+        {/* DarkVeil Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <DarkVeil />
+        </div>
         
-        <div className="container relative grid items-start gap-10 md:grid-cols-2 pt-4 z-20">
-          <div>
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-yellow-500/60 bg-white/10 backdrop-blur px-3 py-1 text-xs font-semibold text-white">
-              <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
-              Career Development Tools
-            </div>
-            
-            {/* Heading */}
-            <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-              Resources to Boost Your Legal Career
-            </h1>
-            
-            {/* Subheading */}
-            <p className="mt-5 text-lg text-white/90 leading-relaxed max-w-2xl">
-              Access free CV templates, cover letters, interview guides, and more to excel as a law student.
-            </p>
-            
-            {/* CTA */}
-            <div className="mt-8">
-              <button 
-                onClick={() => document.getElementById('resource-listings')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-white text-white font-semibold px-6 py-3 hover:bg-white hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-yellow-500 group"
-              >
-                Explore Resources
-                <i className="fas fa-arrow-down transition-transform group-hover:translate-y-1"></i>
-              </button>
-            </div>
-            
-            {/* Trust indicators */}
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 text-white/80 text-sm">
-              {[
-                { icon: "fas fa-download", text: "Free Downloads" },
-                { icon: "fas fa-edit", text: "Customizable" },
-                { icon: "fas fa-star", text: "Professional Quality" },
-              ].map((item) => (
-                <div key={item.text} className="flex items-center gap-2">
-                  <i className={`${item.icon}`} style={{ fontSize: '1rem', color: 'white', display: 'inline-block' }}></i>
-                  <span>{item.text}</span>
-                </div>
-              ))}
-            </div>
+        {/* Decorative gradients */}
+        <div className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(70%_60%_at_50%_10%,_black,_transparent)] z-10">
+          <div className="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-[--color-gold]/20 blur-3xl"></div>
+          <div className="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
+        </div>
+        
+        <div className="container relative text-center pt-8 z-20">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-yellow-500/60 bg-white/10 backdrop-blur px-4 py-2 text-sm font-semibold text-white mb-6">
+            <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
+            Career Development Resources
           </div>
           
-          {/* Right visual */}
-          <div className="relative">
-            <div className="relative aspect-[4/3] rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl shadow-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(40%_60%_at_70%_20%,_rgba(255,255,255,0.25),_transparent_60%)]"></div>
-              <Image 
-                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Professional workspace with laptop and legal documents" 
-                fill
-                className="object-cover object-center"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent"></div>
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <div className="text-lg font-medium">Professional • Accessible • Effective</div>
-              </div>
-            </div>
+          {/* Main Heading */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
+            Essential Resources for Legal Career Success
+          </h1>
+          
+          {/* Subheading */}
+          <p className="text-xl text-white/90 leading-relaxed max-w-4xl mx-auto mb-8">
+            Access our comprehensive collection of professional templates, guides, and tools designed to accelerate your legal career development.
+          </p>
+          
+          {/* CTA */}
+          <div>
+            <button 
+              onClick={() => document.getElementById('resource-listings')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center gap-3 rounded-xl border-2 border-white text-white font-semibold px-8 py-4 hover:bg-white hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-yellow-500 group transition-all"
+            >
+              Explore Our Resources
+              <i className="fas fa-arrow-down transition-transform group-hover:translate-y-1"></i>
+            </button>
           </div>
         </div>
       </section>
@@ -204,56 +157,113 @@ export default function ResourcesPage() {
           
           {/* Resource Categories */}
           <div className="space-y-16">
-            {resourceCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="group">
-                {/* Category Header */}
-                <div className="flex items-center gap-4 mb-8">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r ${category.color} text-white shadow-lg`}>
-                    <i className={`${category.icon} text-lg`}></i>
+            {/* First Row: CV Templates and Cover Letter Templates */}
+            <div className="grid gap-8 md:grid-cols-2">
+              {resourceCategories.slice(0, 2).map((category, categoryIndex) => (
+                <div key={categoryIndex} className="group">
+                  {/* Category Header */}
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r ${category.color} text-white shadow-lg`}>
+                      <i className={`${category.icon} text-lg`}></i>
+                    </div>
+                    <h3 className="text-3xl font-bold text-[#0e46a5] group-hover:text-[#1a5bb8] transition-colors">
+                      {category.title}
+                    </h3>
                   </div>
-                  <h3 className="text-3xl font-bold text-[#0e46a5] group-hover:text-[#1a5bb8] transition-colors">
-                    {category.title}
-                  </h3>
-                </div>
-                
-                {/* Resources Grid */}
-                <div className="grid gap-6 md:grid-cols-2">
-                  {category.resources.map((resource, resourceIndex) => (
-                    <div key={resourceIndex} className="group/resource">
-                      <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#0e46a5] h-full">
-                        {/* Resource Preview */}
-                        <div className="relative aspect-[4/3] rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 mb-6 overflow-hidden">
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <div className={`w-16 h-16 rounded-xl bg-gradient-to-r ${category.color} flex items-center justify-center shadow-lg`}>
-                              <i className={`${category.icon} text-2xl text-white`}></i>
+                  
+                  {/* Resources Grid */}
+                  <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
+                    {category.resources.map((resource, resourceIndex) => (
+                      <div key={resourceIndex} className="group/resource">
+                        <div className="bg-white border-2 border-gray-200 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#0e46a5] h-full">
+                          {/* Resource Preview */}
+                          <div className="relative aspect-[4/3] rounded-lg bg-gradient-to-br from-gray-50 to-gray-100 mb-4 overflow-hidden">
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className={`w-10 h-10 rounded-lg bg-gradient-to-r ${category.color} flex items-center justify-center shadow-lg`}>
+                                <i className={`${category.icon} text-lg text-white`}></i>
+                              </div>
+                            </div>
+                            <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded px-2 py-1">
+                              <span className="text-xs font-semibold text-[#0e46a5]">{resource.type}</span>
                             </div>
                           </div>
-                          <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                            <span className="text-sm font-semibold text-[#0e46a5]">{resource.type}</span>
+                          
+                          {/* Resource Info */}
+                          <div className="mb-4">
+                            <h4 className="text-sm font-bold text-[#0e46a5] mb-2 group-hover/resource:text-[#1a5bb8] transition-colors line-clamp-2">
+                              {resource.title}
+                            </h4>
+                            <p className="text-gray-600 text-xs leading-relaxed line-clamp-3">
+                              {resource.description}
+                            </p>
                           </div>
+                          
+                          {/* Download Button */}
+                          <button className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold px-3 py-2 rounded-lg hover:from-yellow-600 hover:to-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-all shadow-lg hover:shadow-xl group/btn text-sm">
+                            <i className="fas fa-download mr-1 group-hover/btn:animate-bounce"></i>
+                            Download
+                          </button>
                         </div>
-                        
-                        {/* Resource Info */}
-                        <div className="mb-6">
-                          <h4 className="text-xl font-bold text-[#0e46a5] mb-3 group-hover/resource:text-[#1a5bb8] transition-colors">
-                            {resource.title}
-                          </h4>
-                          <p className="text-gray-600 leading-relaxed">
-                            {resource.description}
-                          </p>
-                        </div>
-                        
-                        {/* Download Button */}
-                        <button className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold px-6 py-3 rounded-lg hover:from-yellow-600 hover:to-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-all shadow-lg hover:shadow-xl group/btn">
-                          <i className="fas fa-download mr-2 group-hover/btn:animate-bounce"></i>
-                          Download Now
-                        </button>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            {/* Second Row: Interview Guides and Networking for Law Students */}
+            <div className="grid gap-8 md:grid-cols-2">
+              {resourceCategories.slice(2, 4).map((category, categoryIndex) => (
+                <div key={categoryIndex + 2} className="group">
+                  {/* Category Header */}
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r ${category.color} text-white shadow-lg`}>
+                      <i className={`${category.icon} text-lg`}></i>
+                    </div>
+                    <h3 className="text-3xl font-bold text-[#0e46a5] group-hover:text-[#1a5bb8] transition-colors">
+                      {category.title}
+                    </h3>
+                  </div>
+                  
+                  {/* Resources Grid */}
+                  <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
+                    {category.resources.map((resource, resourceIndex) => (
+                      <div key={resourceIndex} className="group/resource">
+                        <div className="bg-white border-2 border-gray-200 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#0e46a5] h-full">
+                          {/* Resource Preview */}
+                          <div className="relative aspect-[4/3] rounded-lg bg-gradient-to-br from-gray-50 to-gray-100 mb-4 overflow-hidden">
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className={`w-10 h-10 rounded-lg bg-gradient-to-r ${category.color} flex items-center justify-center shadow-lg`}>
+                                <i className={`${category.icon} text-lg text-white`}></i>
+                              </div>
+                            </div>
+                            <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded px-2 py-1">
+                              <span className="text-xs font-semibold text-[#0e46a5]">{resource.type}</span>
+                            </div>
+                          </div>
+                          
+                          {/* Resource Info */}
+                          <div className="mb-4">
+                            <h4 className="text-sm font-bold text-[#0e46a5] mb-2 group-hover/resource:text-[#1a5bb8] transition-colors line-clamp-2">
+                              {resource.title}
+                            </h4>
+                            <p className="text-gray-600 text-xs leading-relaxed line-clamp-3">
+                              {resource.description}
+                            </p>
+                          </div>
+                          
+                          {/* Download Button */}
+                          <button className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold px-3 py-2 rounded-lg hover:from-yellow-600 hover:to-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-all shadow-lg hover:shadow-xl group/btn text-sm">
+                            <i className="fas fa-download mr-1 group-hover/btn:animate-bounce"></i>
+                            Download
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
