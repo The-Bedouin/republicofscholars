@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+/* Brand tokens */
+:root {
+  /* Light professional palette - White first, Blue, Gold, Black */
+  --ros-navy: #0e46a5; /* Custom blue */
+  --ros-navy-light: #1a5bb8;
+  --ros-navy-dark: #0a3a8a;
+  --ros-gold: #D4AF37; /* classic gold */
+  --ros-gold-light: #E1C563;
+  --ros-gold-dark: #B38E20;
+  --ros-white: #ffffff;
+  --ros-slate: #2d3748;
+  --ros-slate-light: #4a5568;
+  --ros-slate-dark: #1a202c;
+  
+  /* Accent colors */
+  --ros-emerald: #38b2ac;
+  --ros-emerald-light: #4fd1c7;
+  --ros-emerald-dark: #319795;
+  --ros-coral: #fc8181;
+  --ros-coral-light: #feb2b2;
+  --ros-coral-dark: #f56565;
+  
+  /* Gradients */
+  --ros-gradient: linear-gradient(135deg, var(--ros-navy) 0%, var(--ros-navy-light) 50%, var(--ros-navy-dark) 100%);
+  --ros-gradient-gold: linear-gradient(135deg, var(--ros-gold) 0%, var(--ros-gold-light) 100%);
+  --ros-gradient-hero: linear-gradient(135deg, var(--ros-navy) 0%, var(--ros-navy-light) 40%, var(--ros-emerald) 100%);
+
+  /* Light mode surface */
+  --background: var(--ros-white);
+  --foreground: var(--ros-slate);
+
+  /* Semantic palette generated from primary colors */
+  /* Light blue scale for subtle tints */
+  --brand-50: #f0f4ff;   /* Very light blue */
+  --brand-100: #e0e9ff;  /* Light blue */
+  --brand-200: #c7d6ff;  /* Lighter blue */
+  --brand-300: #a3b8ff;  /* Light blue */
+  --brand-400: #7c9aff;  /* Medium light blue */
+  --brand-500: var(--ros-navy); /* #0e46a5 */
+  --brand-600: var(--ros-navy-light); /* #1a5bb8 */
+  --brand-700: var(--ros-navy-dark); /* #0a3a8a */
+  --brand-800: #08306b;  /* Darker blue */
+  --brand-900: #061f4a;  /* Darkest blue */
+
+  --gold-50: #fffaf0;
+  --gold-100: #feebc8;
+  --gold-200: #fbd38d;
+  --gold-300: #f6ad55;
+  --gold-400: var(--ros-gold);
+  --gold-500: var(--ros-gold-light);
+  --gold-600: var(--ros-gold-dark);
+  --gold-700: #b7791f;
+  --gold-800: #975a16;
+  --gold-900: #744210;
+}
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--ros-navy);
+  --color-gold: var(--ros-gold);
+  --color-emerald: var(--ros-emerald);
+  --color-coral: var(--ros-coral);
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+
+  /* Typography */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--ros-navy-dark);
+    --foreground: #ffffff;
+  }
+}
+
+/* Base styles */
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "DM Serif Text", var(--font-geist-sans, ui-sans-serif), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  letter-spacing: 0.05em;
+}
+
+/* Accessible focus ring */
+*:where(:focus-visible) {
+  outline: 2px solid var(--ros-gold);
+  outline-offset: 2px;
+}
+
+/* Utility helpers */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 text-white bg-[--color-brand] hover:bg-[color-mix(in_oklab,_var(--color-brand),_black_12%)] transition-colors;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 text-[--color-brand] bg-white border border-[--color-brand]/20 hover:bg-[--ros-gold]/10 transition-colors;
+}
+
+.btn-gold {
+  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5;
+  background-color: var(--ros-gold);
+  color: var(--ros-blue);
+  font-weight: 600;
+}
+.btn-gold:hover { 
+  background-color: color-mix(in_oklab, var(--ros-gold), var(--ros-blue) 8%); 
+  color: var(--ros-blue);
+}
+
+.section {
+  @apply py-16 sm:py-20;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+/* Brand utilities */
+.text-gold { color: var(--ros-gold); }
+.bg-gold { background-color: var(--ros-gold); }
+.border-gold { border-color: var(--ros-gold); }
+.text-brand { color: var(--ros-navy); }
+.bg-brand { background-color: var(--ros-navy); }
+.border-brand { border-color: color-mix(in_oklab, var(--ros-navy), black 10%); }
+.text-emerald { color: var(--ros-emerald); }
+.bg-emerald { background-color: var(--ros-emerald); }
+.text-coral { color: var(--ros-coral); }
+.bg-coral { background-color: var(--ros-coral); }
+
+/* Links */
+a { color: var(--ros-navy); }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Dark mode link adjustments */
+@media (prefers-color-scheme: dark) {
+  a { color: #ffffff; }
+  a:hover { color: var(--ros-gold); }
+}
+
+/* Text selection */
+::selection { background: var(--ros-gold); color: var(--ros-navy); }
+
+/* Modern hero background with subtle gold glow */
+.bg-hero {
+  background: var(--ros-gradient-hero);
+  position: relative;
+}
+
+.bg-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(800px 400px at 90% 20%, color-mix(in_oklab, var(--ros-gold), transparent 60%), transparent),
+    radial-gradient(600px 300px at 0% 100%, color-mix(in_oklab, var(--ros-emerald), transparent 40%), transparent);
+  pointer-events: none;
+}
+
+/* Glass panel */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+/* Soft card hover */
+.card-hover {
+  @apply transition-transform transition-shadow duration-200 hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+/* Stat chip */
+.chip {
+  @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm border border-white/25 bg-white/10 text-white;
+}
+
+/* Font Awesome icon fixes */
+.fas, .far, .fab, .fal, .fa {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 6 Brands" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  line-height: 1 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Ensure icons are visible */
+i[class*="fa-"] {
+  display: inline-block !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  line-height: 1 !important;
+}
+
+/* Fallback for missing icons */
+.fa-user-graduate::before { content: "👨‍🎓"; }
+.fa-trophy::before { content: "🏆"; }
+.fa-briefcase::before { content: "💼"; }
+.fa-university::before { content: "🏛️"; }
+.fa-comments::before { content: "💬"; }
+.fa-graduation-cap::before { content: "🎓"; }
+.fa-gavel::before { content: "⚖️"; }
+
+/* Dark mode card adjustments */
+@media (prefers-color-scheme: dark) {
+  .card-hover {
+    @apply bg-white/5 border-white/10;
+  }
+  
+  /* Ensure text is visible on dark backgrounds */
+  .text-black\/70 {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  
+  .text-black\/70 {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
