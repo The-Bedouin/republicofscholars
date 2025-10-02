@@ -186,138 +186,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Programs Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 text-sm font-medium text-[#0e46a5] mb-4">
-              <span className="h-2 w-2 rounded-full bg-[#0e46a5]"></span>
-              Our Programs
-            </div>
-            
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0e46a5] mb-4 leading-tight">
-              Comprehensive Legal Development Programs
-            </h2>
-            
-            <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Transform your legal education with our proven programs designed to accelerate your career.
-            </p>
-          </div>
-          
-          {/* Program Cards */}
-          <div className="grid gap-8 md:grid-cols-3">
-            {/* Mentorship Program Card */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#0e46a5]">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#0e46a5] rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-white">👥</span>
-                </div>
-                <h3 className="text-2xl font-bold text-[#0e46a5] mb-4">Mentorship Program</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  One-on-one guidance connecting students with seasoned legal professionals for personalized career development.
-                </p>
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-                  <p className="text-sm font-semibold text-blue-800">Key Outcome:</p>
-                  <p className="text-blue-700">Build a professional network and gain career clarity</p>
-                </div>
-                <Link 
-                  href="/programs" 
-                  className="inline-block bg-[#0e46a5] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1a5bb8] transition-colors"
-                >
-                  Learn More →
-                </Link>
-              </div>
-                </div>
-                
-            {/* Skill Development Card */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#0e46a5]">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#0e46a5] rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-white">🛠️</span>
-                </div>
-                <h3 className="text-2xl font-bold text-[#0e46a5] mb-4">Skill Development</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  Hands-on sessions on research, writing, advocacy, and career readiness to build practical competencies.
-                </p>
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-                  <p className="text-sm font-semibold text-blue-800">Key Outcome:</p>
-                  <p className="text-blue-700">Develop practical, career-ready legal skills</p>
-                </div>
-                <Link 
-                  href="/programs" 
-                  className="inline-block bg-[#0e46a5] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1a5bb8] transition-colors"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
-
-            {/* Advocacy Training Card */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#0e46a5]">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#0e46a5] rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl text-white">⚖️</span>
-                </div>
-                <h3 className="text-2xl font-bold text-[#0e46a5] mb-4">Advocacy Training</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  Moots, debates, and clinics to build confidence and courtroom skills for future legal practice.
-                </p>
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-                  <p className="text-sm font-semibold text-blue-800">Key Outcome:</p>
-                  <p className="text-blue-700">Master effective public speaking and advocacy</p>
-              </div>
-                <Link 
-                  href="/programs" 
-                  className="inline-block bg-[#0e46a5] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1a5bb8] transition-colors"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </div>
-          </div>
-          
-          {/* CTA Button */}
-          <div className="text-center mt-16">
-            <Link 
-              href="/programs" 
-              className="inline-flex items-center gap-3 bg-[#0e46a5] text-white px-8 py-4 rounded-full font-medium hover:bg-[#1a5bb8] transition-colors group"
-            >
-              <span>See All Programs</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">
-                <path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <path d="M8 7H17V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Our Impact Section */}
-      <section className="py-20 bg-gradient-to-br from-[#0e46a5] via-[#1a5bb8] to-[#0e46a5] relative overflow-hidden">
+      <section className="py-8 bg-gradient-to-br from-[#f0f4ff] via-[#e0e9ff] to-[#c7d6ff] relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-[radial-gradient(600px_300px_at_20%_20%,_rgba(255,255,255,0.1),_transparent_60%),_radial-gradient(600px_300px_at_80%_80%,_rgba(255,215,0,0.1),_transparent_60%)]" aria-hidden="true"></div>
         
         <div className="container relative">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-yellow-400 bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-semibold text-white mb-6">
-              <span className="h-2 w-2 rounded-full bg-yellow-400"></span>
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#0e46a5] bg-white/80 backdrop-blur-sm px-4 py-2 text-sm font-semibold text-[#0e46a5] mb-3">
+              <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
               Our Impact
             </div>
             
             {/* Main heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#0e46a5] leading-tight mb-3">
               Transforming Legal Education Across Nigeria
             </h2>
             
             {/* Subheading */}
-            <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base text-gray-700 leading-relaxed max-w-3xl mx-auto">
               See the measurable difference we're making in the lives of law students and the legal profession.
             </p>
           </div>
           
           {/* Impact Stats Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-16">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-8">
             {[
               {
                 number: "500+",
@@ -349,22 +243,22 @@ export default function Home() {
               }
             ].map((stat, index) => (
               <div key={index} className="group">
-                <div className="bg-white/20 rounded-2xl p-8 text-center hover:bg-white/30 transition-all duration-300 border-2 border-white/40 h-full min-h-[200px]">
+                <div className="bg-white rounded-lg p-4 text-center hover:bg-gray-50 transition-all duration-300 border border-gray-200 shadow-sm h-full min-h-[120px]">
                   {/* Icon */}
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r ${stat.color} text-white shadow-lg mb-6 group-hover:scale-110 transition-transform`}>
-                    <i className={`${stat.icon} text-2xl`} style={{ fontSize: '1.5rem', color: 'white', display: 'inline-block' }}></i>
+                  <div className={`inline-flex items-center justify-center w-10 h-10 rounded-md bg-gradient-to-r ${stat.color} text-white shadow-sm mb-3 group-hover:scale-110 transition-transform`}>
+                    <i className={`${stat.icon} text-sm`} style={{ fontSize: '0.875rem', color: 'white', display: 'inline-block' }}></i>
                   </div>
                   
                   {/* Number with animation */}
-                  <div className="text-4xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300" style={{ color: 'white', fontSize: '2.25rem', fontWeight: 'bold' }}>
+                  <div className="text-2xl font-bold text-[#0e46a5] mb-1 group-hover:scale-110 transition-transform duration-300" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
                     {stat.number}
                   </div>
                   
                   {/* Label */}
-                  <div className="text-lg font-semibold text-white mb-2">{stat.label}</div>
+                  <div className="text-sm font-semibold text-[#0e46a5] mb-1">{stat.label}</div>
                   
                   {/* Description */}
-                  <p className="text-white text-sm leading-relaxed">{stat.description}</p>
+                  <p className="text-gray-700 text-xs leading-relaxed">{stat.description}</p>
                 </div>
               </div>
             ))}
@@ -440,7 +334,7 @@ export default function Home() {
           
           {/* Call to Action */}
           <div className="text-center">
-            <p className="text-lg text-white/90 mb-6">
+            <p className="text-base text-gray-700 mb-3">
               Be part of our growing impact story
             </p>
             <Link 
@@ -507,104 +401,107 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-[#f0f4ff] via-[#e0e9ff] to-[#c7d6ff]">
+      {/* Mentors Testimonials Section */}
+      <section className="py-12 bg-gradient-to-br from-[#f0f4ff] via-[#e0e9ff] to-[#c7d6ff]">
         <div className="container">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#0e46a5] bg-white/80 backdrop-blur-sm px-4 py-2 text-sm font-semibold text-[#0e46a5] mb-6">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#0e46a5] bg-white/80 backdrop-blur-sm px-4 py-2 text-sm font-semibold text-[#0e46a5] mb-4">
               <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
-              Success Stories
+              Our Mentors
             </div>
             
             {/* Main heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0e46a5] leading-tight mb-6">
-              What Our Nigerian Beneficiaries Say
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0e46a5] leading-tight mb-4">
+              What Our Industry Mentors Say
             </h2>
             
             {/* Subheading */}
-            <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Hear from law students across Nigeria who have transformed their academic journey and career prospects through our programs.
+            <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+              Hear from senior professionals at leading companies who are shaping the next generation of legal talent through our mentorship programs.
             </p>
           </div>
           
-          {/* Testimonials Grid */}
+          {/* Mentors Testimonials Grid */}
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                name: "Aisha Mohammed",
-                university: "University of Lagos",
-                program: "Mentorship Program",
-                quote: "The mentorship program connected me with a senior advocate who guided me through my final year. I secured a first-class degree and landed my dream job at a top law firm in Lagos.",
-                image: "AM",
+                name: "Sarah Mitchell",
+                title: "Senior Legal Counsel",
+                company: "KPMG",
+                experience: "15+ years",
+                quote: "Mentoring through Republic of Scholars has been incredibly rewarding. The students are bright, motivated, and eager to learn. It's inspiring to see them grow into confident legal professionals ready to make their mark in the industry.",
+                image: "SM",
                 rating: 5,
-                impact: "First-class degree + Job at top law firm",
-                beforeAfter: "2.8 GPA → 4.2 GPA"
+                expertise: "Corporate Law & Compliance",
+                mentorship: "3 years with ROS"
               },
               {
-                name: "Chinedu Okonkwo",
-                university: "University of Nigeria, Nsukka",
-                program: "Advocacy Training",
-                quote: "The moot court training was incredible. I represented Nigeria at the international moot competition and won best speaker. The skills I gained here are invaluable.",
-                image: "CO",
+                name: "David Chen",
+                title: "Managing Director, Legal",
+                company: "Bank of America",
+                experience: "20+ years",
+                quote: "The quality of students in this program is exceptional. They come prepared, ask thoughtful questions, and demonstrate the kind of analytical thinking that makes great lawyers. I'm proud to be part of their journey.",
+                image: "DC",
                 rating: 5,
-                impact: "International moot winner + Best speaker award",
-                beforeAfter: "Shy speaker → Confident advocate"
+                expertise: "Financial Services Law",
+                mentorship: "2 years with ROS"
               },
               {
-                name: "Fatima Ibrahim",
-                university: "Ahmadu Bello University",
-                program: "Skill Development",
-                quote: "The research and writing workshops transformed my academic performance. I went from struggling with legal writing to publishing my first paper in a law journal.",
-                image: "FI",
+                name: "Maria Rodriguez",
+                title: "Partner, Legal Advisory",
+                company: "Deloitte",
+                experience: "18+ years",
+                quote: "What sets Republic of Scholars apart is their commitment to practical, real-world learning. The students I mentor are not just academically strong but also understand how to apply legal principles in business contexts.",
+                image: "MR",
                 rating: 5,
-                impact: "Published research + Academic recognition",
-                beforeAfter: "Failed papers → Published author"
+                expertise: "Tax Law & Advisory",
+                mentorship: "4 years with ROS"
               }
-            ].map((testimonial, index) => (
+            ].map((mentor, index) => (
               <div key={index} className="group">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col">
+                <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full flex flex-col">
                   {/* Quote */}
                   <div className="flex-1">
-                    <div className="text-4xl text-yellow-500 mb-4 opacity-20">"</div>
-                    <blockquote className="text-gray-700 leading-relaxed text-lg font-medium italic mb-6">
-                      {testimonial.quote}
+                    <div className="text-lg text-yellow-500 mb-2 opacity-20">"</div>
+                    <blockquote className="text-gray-700 leading-relaxed text-sm font-medium italic mb-3">
+                      {mentor.quote}
                     </blockquote>
                   </div>
                   
-                  {/* Impact Metrics */}
-                  <div className="mb-6 space-y-3">
-                    <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 border border-green-200">
-                      <div className="text-sm font-semibold text-green-700 mb-1">Key Achievement</div>
-                      <div className="text-lg font-bold text-green-800">{testimonial.impact}</div>
+                  {/* Mentor Info Cards */}
+                  <div className="mb-3 space-y-1">
+                    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-md p-2 border border-blue-200">
+                      <div className="text-xs font-semibold text-blue-700 mb-0.5">Expertise</div>
+                      <div className="text-xs font-bold text-blue-800">{mentor.expertise}</div>
                     </div>
-                    <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-4 border border-yellow-200">
-                      <div className="text-sm font-semibold text-yellow-700 mb-1">Transformation</div>
-                      <div className="text-lg font-bold text-yellow-800">{testimonial.beforeAfter}</div>
+                    <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-md p-2 border border-green-200">
+                      <div className="text-xs font-semibold text-green-700 mb-0.5">Experience</div>
+                      <div className="text-xs font-bold text-green-800">{mentor.mentorship}</div>
                     </div>
                   </div>
                   
                   {/* Rating */}
-                  <div className="flex items-center gap-1 mb-6">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <i key={i} className="fas fa-star text-yellow-500 text-sm"></i>
+                  <div className="flex items-center gap-1 mb-3">
+                    {[...Array(mentor.rating)].map((_, i) => (
+                      <i key={i} className="fas fa-star text-yellow-500 text-xs"></i>
                     ))}
                   </div>
                   
                   {/* Author */}
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2">
                     {/* Avatar */}
                     <div className="relative">
-                      <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] flex items-center justify-center shadow-md">
-                        <span className="text-white font-bold text-sm">{testimonial.image}</span>
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] flex items-center justify-center shadow-sm">
+                        <span className="text-white font-bold text-xs">{mentor.image}</span>
                       </div>
-                      <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-20"></div>
+                      <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-20"></div>
                     </div>
                     
                     <div className="flex-1">
-                      <div className="font-bold text-[#0e46a5] text-lg">{testimonial.name}</div>
-                      <div className="text-gray-600 font-medium">{testimonial.university}</div>
-                      <div className="text-sm text-yellow-600 font-semibold">{testimonial.program}</div>
+                      <div className="font-bold text-[#0e46a5] text-sm">{mentor.name}</div>
+                      <div className="text-gray-600 font-medium text-xs">{mentor.title}</div>
+                      <div className="text-xs text-blue-600 font-semibold">{mentor.company} • {mentor.experience}</div>
                     </div>
                   </div>
                 </div>
@@ -613,121 +510,20 @@ export default function Home() {
           </div>
           
           {/* Bottom CTA */}
-          <div className="text-center mt-16">
-            <p className="text-lg text-gray-700 mb-6">
-              Ready to join these success stories?
+          <div className="text-center mt-12">
+            <p className="text-lg text-gray-700 mb-4">
+              Ready to connect with industry mentors like these?
             </p>
             <Link 
               href="/contact" 
               className="inline-flex items-center gap-3 bg-[#0e46a5] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#1a5bb8] focus:outline-none focus:ring-2 focus:ring-[#0e46a5] focus:ring-offset-2 transition-all shadow-xl hover:shadow-2xl group"
             >
-              Start Your Journey
+              Start Your Mentorship Journey
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">
                 <path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                 <path d="M8 7H17V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Timeline Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="text-center mb-16">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#0e46a5] bg-blue-50 px-4 py-2 text-sm font-semibold text-[#0e46a5] mb-6">
-              <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
-              Our Journey
-            </div>
-            
-            {/* Main heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0e46a5] leading-tight mb-6">
-              Milestones & Achievements
-            </h2>
-            
-            {/* Subheading */}
-            <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Key moments that have shaped our impact on legal education in Nigeria.
-            </p>
-          </div>
-          
-          {/* Timeline */}
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#0e46a5] via-yellow-500 to-[#0e46a5] rounded-full"></div>
-            
-            {/* Timeline items */}
-            <div className="space-y-16">
-              {[
-                {
-                  year: "2020",
-                  title: "Foundation Established",
-                  description: "Republic of Scholars Initiative founded with a vision to transform legal education",
-                  icon: "fas fa-seedling",
-                  color: "from-green-500 to-green-600",
-                  side: "left"
-                },
-                {
-                  year: "2021",
-                  title: "First 100 Students",
-                  description: "Reached our first milestone of mentoring 100 law students across 5 universities",
-                  icon: "fas fa-users",
-                  color: "from-blue-500 to-blue-600",
-                  side: "right"
-                },
-                {
-                  year: "2022",
-                  title: "University Partnerships",
-                  description: "Established partnerships with 15+ universities across Nigeria",
-                  icon: "fas fa-handshake",
-                  color: "from-purple-500 to-purple-600",
-                  side: "left"
-                },
-                {
-                  year: "2023",
-                  title: "International Recognition",
-                  description: "Our students won international moot court competitions and gained global recognition",
-                  icon: "fas fa-trophy",
-                  color: "from-yellow-500 to-yellow-600",
-                  side: "right"
-                },
-                {
-                  year: "2024",
-                  title: "500+ Students Impacted",
-                  description: "Reached 500+ students with 95% success rate and 150+ job placements",
-                  icon: "fas fa-chart-line",
-                  color: "from-red-500 to-red-600",
-                  side: "left"
-                }
-              ].map((milestone, index) => (
-                <div key={index} className={`relative flex items-center group ${milestone.side === 'left' ? 'justify-start' : 'justify-end'}`}>
-                  {/* Timeline dot with animation */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white border-4 border-[#0e46a5] rounded-full z-10 group-hover:scale-125 transition-transform duration-300">
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  
-                  {/* Content card */}
-                  <div className={`w-full max-w-md ${milestone.side === 'left' ? 'pr-16' : 'pl-16'}`}>
-                    <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
-                      {/* Year */}
-                      <div className="text-2xl font-bold text-[#0e46a5] mb-2">{milestone.year}</div>
-                      
-                      {/* Icon */}
-                      <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-r ${milestone.color} text-white shadow-lg mb-4`}>
-                        <i className={`${milestone.icon} text-lg`}></i>
-                      </div>
-                      
-                      {/* Title */}
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">{milestone.title}</h3>
-                      
-                      {/* Description */}
-                      <p className="text-gray-600 leading-relaxed">{milestone.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>

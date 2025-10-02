@@ -212,45 +212,45 @@ export default function AmbassadorsPage() {
 
 
           {/* Ambassador Cards Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {ambassadors.map((university, index) => (
               <div key={index} className="group">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full">
                   {/* University Header */}
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <i className="fas fa-university text-2xl text-white"></i>
+                  <div className="text-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] rounded-full flex items-center justify-center mx-auto mb-3 shadow-md">
+                      <i className="fas fa-university text-lg text-white"></i>
                     </div>
-                    <h3 className="text-xl font-bold text-[#0e46a5] mb-2">{university.university}</h3>
-                    <div className="inline-flex items-center gap-2 rounded-full bg-yellow-100 text-yellow-800 px-3 py-1 text-sm font-medium">
+                    <h3 className="text-lg font-bold text-[#0e46a5] mb-2">{university.university}</h3>
+                    <div className="inline-flex items-center gap-2 rounded-full bg-yellow-100 text-yellow-800 px-2 py-1 text-xs font-medium">
                       <i className="fas fa-map-marker-alt text-xs"></i>
                       {university.region}
                     </div>
                   </div>
 
                   {/* Ambassadors List */}
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {university.ambassadors.map((ambassador, ambIndex) => (
-                      <div key={ambIndex} className="border border-gray-100 rounded-xl p-4 hover:border-[#0e46a5]/30 transition-colors">
-                        <div className="flex items-start gap-4">
+                      <div key={ambIndex} className="border border-gray-100 rounded-lg p-3 hover:border-[#0e46a5]/30 transition-colors">
+                        <div className="flex items-start gap-3">
                           {/* Ambassador Photo */}
                           <div className="relative">
-                            <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] flex items-center justify-center shadow-md">
-                              <span className="text-white font-bold text-sm">{ambassador.photo}</span>
+                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] flex items-center justify-center shadow-sm">
+                              <span className="text-white font-bold text-xs">{ambassador.photo}</span>
                             </div>
-                            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-20"></div>
+                            <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-20"></div>
                           </div>
                           
                           <div className="flex-1 min-w-0">
-                            <h4 className="font-bold text-[#0e46a5] text-lg mb-1">{ambassador.name}</h4>
-                            <div className="text-sm text-yellow-600 font-semibold mb-2">{ambassador.role}</div>
-                            <p className="text-gray-600 text-sm leading-relaxed mb-3">{ambassador.bio}</p>
+                            <h4 className="font-bold text-[#0e46a5] text-sm mb-1">{ambassador.name}</h4>
+                            <div className="text-xs text-yellow-600 font-semibold mb-2">{ambassador.role}</div>
+                            <p className="text-gray-600 text-xs leading-relaxed mb-2">{ambassador.bio}</p>
                             
                             {/* Contact Links */}
-                            <div className="flex gap-2">
+                            <div className="flex gap-1">
                               <a 
                                 href={`mailto:${ambassador.email}`}
-                                className="inline-flex items-center gap-1 text-xs bg-[#0e46a5] text-white px-3 py-1 rounded-full hover:bg-[#1a5bb8] transition-colors"
+                                className="inline-flex items-center gap-1 text-xs bg-[#0e46a5] text-white px-2 py-1 rounded-full hover:bg-[#1a5bb8] transition-colors"
                               >
                                 <i className="fas fa-envelope text-xs"></i>
                                 Email
@@ -259,7 +259,7 @@ export default function AmbassadorsPage() {
                                 href={ambassador.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1 text-xs bg-[#0e46a5] text-white px-3 py-1 rounded-full hover:bg-[#1a5bb8] transition-colors"
+                                className="inline-flex items-center gap-1 text-xs bg-[#0e46a5] text-white px-2 py-1 rounded-full hover:bg-[#1a5bb8] transition-colors"
                               >
                                 <i className="fab fa-linkedin text-xs"></i>
                                 LinkedIn
@@ -297,7 +297,7 @@ export default function AmbassadorsPage() {
           </div>
 
           {/* Steps Grid */}
-          <div className="grid gap-8 md:grid-cols-3 mb-16">
+          <div className="grid gap-6 md:grid-cols-3 mb-12">
             {[
               {
                 step: "01",
@@ -322,53 +322,27 @@ export default function AmbassadorsPage() {
               }
             ].map((step, index) => (
               <div key={index} className="group">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full">
                   {/* Step Number */}
-                  <div className="text-6xl font-bold text-gray-100 mb-4">{step.step}</div>
+                  <div className="text-4xl font-bold text-gray-100 mb-3">{step.step}</div>
                   
                   {/* Icon */}
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r ${step.color} text-white shadow-lg mb-6 group-hover:scale-110 transition-transform`}>
-                    <i className={`${step.icon} text-2xl`}></i>
+                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-r ${step.color} text-white shadow-md mb-4 group-hover:scale-110 transition-transform`}>
+                    <i className={`${step.icon} text-lg`}></i>
                   </div>
                   
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-[#0e46a5] mb-4 group-hover:text-[#1a5bb8] transition-colors">
+                  <h3 className="text-lg font-bold text-[#0e46a5] mb-3 group-hover:text-[#1a5bb8] transition-colors">
                     {step.title}
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed text-sm">
                     {step.description}
                   </p>
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Eligibility Requirements */}
-          <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-100">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-[#0e46a5] mb-4">Eligibility Requirements</h3>
-              <p className="text-lg text-gray-600">Ensure you meet these criteria before applying</p>
-            </div>
-            
-            <div className="grid gap-6 md:grid-cols-2">
-              {[
-                "Current law student (2nd year and above) or recent graduate (within 2 years)",
-                "Minimum CGPA of 3.5/5.0 or equivalent",
-                "Demonstrated leadership experience in student organizations",
-                "Strong communication and interpersonal skills",
-                "Passion for mentorship and community development",
-                "Commitment to serve for at least one academic year"
-              ].map((requirement, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="w-6 h-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <i className="fas fa-check text-white text-xs"></i>
-                  </div>
-                  <p className="text-gray-700 font-medium">{requirement}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -439,20 +413,20 @@ export default function AmbassadorsPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-gradient-to-br from-[#f0f4ff] via-[#e0e9ff] to-[#c7d6ff]">
+      <section className="py-16 bg-gradient-to-br from-[#f0f4ff] via-[#e0e9ff] to-[#c7d6ff]">
         <div className="container">
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-16">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-12">
             {/* Left Side - Header */}
-            <div className="lg:w-1/2 mb-8 lg:mb-0">
+            <div className="lg:w-1/2 mb-6 lg:mb-0">
               {/* TESTIMONIALS Badge */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-white px-4 py-2 text-sm font-semibold text-red-600 mb-6">
+              <div className="inline-flex items-center gap-2 rounded-full border border-red-300 bg-white px-4 py-2 text-sm font-semibold text-red-600 mb-4">
                 <span className="h-2 w-2 rounded-full bg-red-500"></span>
                 TESTIMONIALS
               </div>
               
               {/* Main Title */}
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
-                <span className="text-gray-500 text-3xl md:text-4xl lg:text-5xl">15+ ambassadors</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-3">
+                <span className="text-gray-500 text-2xl md:text-3xl lg:text-4xl">15+ ambassadors</span>
                 <br />
                 <span className="text-gray-900">One outcome: Growth</span>
               </h2>
@@ -460,7 +434,7 @@ export default function AmbassadorsPage() {
             
             {/* Right Side - Description and Button */}
             <div className="lg:w-1/2 lg:text-right">
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 Real stories from real students who transformed their legal careers with our programs.
               </p>
               <Link 
@@ -474,7 +448,7 @@ export default function AmbassadorsPage() {
           </div>
 
           {/* Testimonials Grid */}
-          <div className="grid gap-8 md:grid-cols-3 mb-12">
+          <div className="grid gap-6 md:grid-cols-3 mb-8">
             {[
               {
                 name: "Aisha Mohammed",
@@ -523,7 +497,7 @@ export default function AmbassadorsPage() {
           </div>
 
           {/* Carousel Indicators */}
-          <div className="flex justify-center gap-2 mb-8">
+          <div className="flex justify-center gap-2 mb-6">
             <div className="w-2 h-2 rounded-full bg-gray-300"></div>
             <div className="w-2 h-2 rounded-full bg-gray-900"></div>
             <div className="w-2 h-2 rounded-full bg-gray-300"></div>
