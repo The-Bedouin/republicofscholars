@@ -8,12 +8,6 @@ export const metadata = {
   description: "Explore our comprehensive programs designed to transform law students through innovative mentorship, skill development, and career advancement opportunities.",
 };
 
-const impactMetrics = [
-  { number: "100+", label: "Students Mentored", icon: "fas fa-user-graduate" },
-  { number: "85%", label: "Job Placement Rate", icon: "fas fa-briefcase" },
-  { number: "50+", label: "Partner Organizations", icon: "fas fa-handshake" },
-  { number: "95%", label: "Student Satisfaction", icon: "fas fa-star" }
-];
 
 export default function ProgramsPage() {
 
@@ -111,75 +105,121 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Impact Metrics Section */}
-      <section className="py-20 bg-gradient-to-br from-[#f0f4ff] via-[#e0e9ff] to-[#c7d6ff]">
-      <div className="container">
+      {/* Our Impact Section */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        <div className="container">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#0e46a5] bg-white/80 backdrop-blur-sm px-4 py-2 text-sm font-semibold text-[#0e46a5] mb-6">
-              <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
-              Our Impact
+            {/* Features Label */}
+            <div className="inline-flex items-center gap-2 mb-6">
+              <div className="w-2 h-2 rounded-full bg-blue-600"></div>
+              <span className="text-blue-600 font-semibold text-sm uppercase tracking-wide">Features</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0e46a5] leading-tight mb-6">
-              Measurable Results That Matter
+            
+            {/* Main Heading */}
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 leading-tight mb-8">
+              Key benefits that set us apart from other firms
             </h2>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Our programs have consistently delivered outstanding results, transforming the lives and careers of law students across Nigeria.
-            </p>
           </div>
           
-          {/* Metrics Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {impactMetrics.map((metric, index) => (
-              <div key={index} className="text-center group">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                  <div className="w-16 h-16 rounded-xl bg-[--color-brand-500] text-white flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <i className={`${metric.icon} text-2xl`}></i>
-                  </div>
-                  <div className="text-4xl font-bold text-[--color-brand-500] mb-2">{metric.number}</div>
-                  <div className="text-gray-700 font-semibold">{metric.label}</div>
-                </div>
+          {/* Benefits Grid */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* First Benefit - Unlimited Consultations */}
+            <div className="text-center group">
+              <div className="w-16 h-16 rounded-xl bg-blue-600 text-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <i className="fas fa-comments text-2xl"></i>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Unlimited consultations</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Schedule as many strategy sessions as needed to develop your legal career path with personalized guidance from experienced professionals.
+              </p>
             </div>
-          ))}
+            
+            {/* Second Benefit - Tailored Solutions */}
+            <div className="text-center group">
+              <div className="w-16 h-16 rounded-xl bg-blue-600 text-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <i className="fas fa-cloud-download-alt text-2xl"></i>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Tailored solutions</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Get customized strategies designed to align with your unique career goals, learning style, and professional aspirations in the legal field.
+              </p>
+            </div>
+            
+            {/* Third Benefit - Expert Insights */}
+            <div className="text-center group">
+              <div className="w-16 h-16 rounded-xl bg-blue-600 text-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <i className="fas fa-globe text-2xl"></i>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Expert insights</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Leverage industry-leading expertise to drive informed decisions and accelerate your professional growth in the competitive legal market.
+              </p>
+            </div>
+          </div>
+          
+          {/* Call to Action */}
+          <div className="text-center">
+            <Link 
+              href="/programs" 
+              className="inline-flex items-center gap-3 bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 shadow-lg hover:shadow-xl group"
+            >
+              See All Programs
+              <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </Link>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
+      <section className="py-6 bg-white relative overflow-hidden">
         {/* Background decoration */}
-        <div className="absolute inset-0 bg-[radial-gradient(600px_300px_at_20%_20%,_rgba(255,255,255,0.1),_transparent_60%),_radial-gradient(600px_300px_at_80%_80%,_rgba(255,215,0,0.1),_transparent_60%)]" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(800px_400px_at_20%_20%,_rgba(255,255,255,0.1),_transparent_60%),_radial-gradient(600px_300px_at_80%_80%,_rgba(59,130,246,0.2),_transparent_60%)]" aria-hidden="true"></div>
         
-        <div className="container relative">
+        {/* Floating elements */}
+        <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-blue-400/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full blur-lg animate-pulse delay-500"></div>
+        
+        <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#0e46a5] bg-white/80 backdrop-blur-sm px-4 py-2 text-sm font-semibold text-[#0e46a5] mb-6">
-              <span className="h-2 w-2 rounded-full bg-[#0e46a5]"></span>
-              Ready to get started?
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-blue-600 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-600 mb-4">
+              <span className="h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+              Ready to Transform Your Legal Career?
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0e46a5] leading-tight mb-6">
-              Join Our Programs Today
+            {/* Main Heading */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+              Join the Next Generation of
+              <span className="block bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
+                Legal Leaders
+              </span>
             </h2>
             
-            <p className="text-xl text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Take the first step towards transforming your legal education and career. Connect with mentors, develop essential skills, and build your professional network.
+            {/* Subheading */}
+            <p className="text-lg text-gray-600 leading-relaxed mb-6 max-w-2xl mx-auto">
+              Don't just study law—master it. Connect with industry experts and launch your career with confidence.
             </p>
             
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link 
                 href="/contact" 
-                className="inline-flex items-center gap-3 bg-[--color-brand-500] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-[--color-brand-600] focus:outline-none focus:ring-2 focus:ring-[--color-brand-500] focus:ring-offset-2 transition-all shadow-xl hover:shadow-2xl group min-w-[200px] justify-center"
+                className="group relative inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-8 py-3 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 min-w-[200px] justify-center"
               >
-                Get Involved
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">
+                <span>Start Your Journey</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">
                   <path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                   <path d="M8 7H17V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </Link>
+              
               <Link 
                 href="/about" 
-                className="inline-flex items-center gap-3 border-2 border-[--color-brand-500] text-[--color-brand-500] font-bold text-lg px-8 py-4 rounded-xl hover:bg-[--color-brand-500] hover:text-white focus:outline-none focus:ring-2 focus:ring-[--color-brand-500] focus:ring-offset-2 transition-all min-w-[200px] justify-center"
+                className="group inline-flex items-center gap-2 bg-black text-white font-semibold px-8 py-3 rounded-xl hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-300 min-w-[200px] justify-center"
               >
-                Learn More About Us
+                <span>Learn More</span>
+                <i className="fas fa-info-circle group-hover:rotate-12 transition-transform"></i>
               </Link>
             </div>
           </div>

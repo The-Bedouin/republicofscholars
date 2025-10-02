@@ -70,9 +70,8 @@ export default function RootLayout({
             <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
               <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/about">About</Link></li>
               <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/programs">Programs</Link></li>
-              <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/team">Team</Link></li>
+              <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/ambassadors">Ambassadors</Link></li>
               <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/resources">Resources</Link></li>
-              <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/partners">Partners</Link></li>
               <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/contact">Contact</Link></li>
               <li><Link className="ml-4 inline-flex items-center justify-center rounded-full px-6 py-2.5 bg-[--color-gold] text-white font-semibold hover:bg-[color-mix(in_oklab,_var(--color-gold),_black_12%)] focus:outline-none focus:ring-2 focus:ring-[--color-gold] transition-all duration-200 shadow-sm hover:shadow-md" href="/donate">Donate</Link></li>
             </ul>
@@ -119,14 +118,13 @@ export default function RootLayout({
                   <ul className="mt-3 space-y-2 text-sm text-white/80">
                     <li><Link href="/about" className="hover:text-[--color-gold] transition-colors">About</Link></li>
                     <li><Link href="/programs" className="hover:text-[--color-gold] transition-colors">Programs</Link></li>
+                    <li><Link href="/ambassadors" className="hover:text-[--color-gold] transition-colors">Ambassadors</Link></li>
                     <li><Link href="/resources" className="hover:text-[--color-gold] transition-colors">Resources</Link></li>
-                    <li><Link href="/team" className="hover:text-[--color-gold] transition-colors">Team</Link></li>
               </ul>
             </div>
             <div>
                   <div className="text-sm font-semibold text-white">Get Involved</div>
                   <ul className="mt-3 space-y-2 text-sm text-white/80">
-                    <li><Link href="/partners" className="hover:text-[--color-gold] transition-colors">Partners</Link></li>
                     <li><Link href="/donate" className="hover:text-[--color-gold] transition-colors">Donate</Link></li>
                     <li><Link href="/contact" className="hover:text-[--color-gold] transition-colors">Contact</Link></li>
               </ul>

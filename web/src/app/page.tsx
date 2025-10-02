@@ -876,16 +876,6 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
-                href="/partners" 
-                className="inline-flex items-center gap-3 bg-[#0e46a5] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#1a5bb8] focus:outline-none focus:ring-2 focus:ring-[#0e46a5] focus:ring-offset-2 transition-all shadow-xl hover:shadow-2xl group"
-              >
-                Become a Partner
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">
-                  <path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M8 7H17V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </Link>
-              <Link 
                 href="/contact" 
                 className="inline-flex items-center gap-3 border-2 border-[#0e46a5] text-[#0e46a5] font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#0e46a5] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#0e46a5] focus:ring-offset-2 transition-all group"
               >
