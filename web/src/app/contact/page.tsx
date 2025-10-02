@@ -7,9 +7,9 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-black mb-3">Let's Connect</h1>
+            <h1 className="text-4xl font-bold text-black mb-3">Let&apos;s Connect</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ready to join our community of scholars? We're here to help you take the next step in your academic journey.
+              Ready to join our community of scholars? We&apos;re here to help you take the next step in your academic journey.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-sm font-bold text-gray-900 mb-1">Email Us</h3>
-                    <p className="text-gray-600 mb-2 text-xs">Send us an email anytime and we'll get back to you within 24 hours.</p>
+                    <p className="text-gray-600 mb-2 text-xs">Send us an email anytime and we&apos;ll get back to you within 24 hours.</p>
                     <a 
                       href="mailto:info@republicofscholars.org" 
                       className="text-black hover:text-gray-700 font-semibold transition-colors duration-200 text-sm"

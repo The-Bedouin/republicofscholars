@@ -362,7 +362,7 @@ export default function ResourcesPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0e46a5] mb-2">Research Your Target</h4>
-                    <p className="text-gray-600">Customize each application by researching the specific firm, organization, or position you're applying for.</p>
+                    <p className="text-gray-600">Customize each application by researching the specific firm, organization, or position you&apos;re applying for.</p>
                   </div>
                 </div>
               </div>

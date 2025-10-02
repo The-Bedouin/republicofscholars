@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             {/* Heading */}
             <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-              Empowering Nigeria's next generation of legal professionals
+              Empowering Nigeria&apos;s next generation of legal professionals
             </h1>
             {/* Subheading */}
             <p className="mt-5 text-lg text-white/90 leading-relaxed max-w-2xl">
@@ -206,7 +206,7 @@ export default function Home() {
             
             {/* Subheading */}
             <p className="text-base text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              See the measurable difference we're making in the lives of law students and the legal profession.
+              See the measurable difference we&apos;re making in the lives of law students and the legal profession.
             </p>
           </div>
           
@@ -365,12 +365,12 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               {/* Quote icon */}
-              <div className="absolute -top-4 -left-4 text-6xl text-yellow-500 opacity-20">"</div>
+              <div className="absolute -top-4 -left-4 text-6xl text-yellow-500 opacity-20">&ldquo;</div>
               
               <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 md:p-12 shadow-xl border border-blue-100">
                 <blockquote className="relative">
                   <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium italic">
-                    "The Republic of Scholars Initiative transforms potential into performance. Through our mentorship programs and career development initiatives, we've seen law students not just succeed academically, but emerge as confident legal professionals ready to make meaningful impact in Nigeria's legal landscape."
+                    &ldquo;The Republic of Scholars Initiative transforms potential into performance. Through our mentorship programs and career development initiatives, we&apos;ve seen law students not just succeed academically, but emerge as confident legal professionals ready to make meaningful impact in Nigeria&apos;s legal landscape.&rdquo;
                   </p>
                   
                   <div className="mt-8 flex items-center gap-4">
@@ -395,7 +395,7 @@ export default function Home() {
               </div>
               
               {/* Bottom quote icon */}
-              <div className="absolute -bottom-4 -right-4 text-6xl text-yellow-500 opacity-20 transform rotate-180">"</div>
+              <div className="absolute -bottom-4 -right-4 text-6xl text-yellow-500 opacity-20 transform rotate-180">&rdquo;</div>
             </div>
           </div>
         </div>
@@ -463,7 +463,7 @@ export default function Home() {
                 <div className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 h-full flex flex-col">
                   {/* Quote */}
                   <div className="flex-1">
-                    <div className="text-lg text-yellow-500 mb-2 opacity-20">"</div>
+                    <div className="text-lg text-yellow-500 mb-2 opacity-20">&ldquo;</div>
                     <blockquote className="text-gray-700 leading-relaxed text-sm font-medium italic mb-3">
                       {mentor.quote}
                     </blockquote>
@@ -545,7 +545,7 @@ export default function Home() {
             
             {/* Subheading */}
             <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              We're proud to partner with prestigious universities, law firms, and organizations across Nigeria.
+              We&apos;re proud to partner with prestigious universities, law firms, and organizations across Nigeria.
             </p>
           </div>
           

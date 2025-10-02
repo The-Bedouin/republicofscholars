@@ -473,7 +473,7 @@ export default function AmbassadorsPage() {
                 <div className="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                   {/* Quote */}
                   <div className="mb-3">
-                    <div className="text-2xl text-gray-900 mb-2 font-bold">"</div>
+                    <div className="text-2xl text-gray-900 mb-2 font-bold">&ldquo;</div>
                     <blockquote className="text-gray-900 leading-relaxed text-sm font-medium">
                       {testimonial.quote}
                     </blockquote>

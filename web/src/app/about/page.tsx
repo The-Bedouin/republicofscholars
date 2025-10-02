@@ -74,7 +74,7 @@ export default function AboutPage() {
               </div>
               
               <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-[#0e46a5] leading-tight mb-6">
-                Building Tomorrow's Legal Leaders
+                Building Tomorrow&apos;s Legal Leaders
               </h2>
               
               <p className="text-xl text-black leading-relaxed font-medium max-w-4xl">
@@ -129,7 +129,7 @@ export default function AboutPage() {
               </div>
               
               <p className="text-base text-black leading-relaxed">
-                To create a thriving community of empowered law professionals shaping Nigeria's legal landscape.
+                To create a thriving community of empowered law professionals shaping Nigeria&apos;s legal landscape.
               </p>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function AboutPage() {
             </h2>
             
             <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              The story of how one visionary leader's passion became a movement transforming legal education.
+              The story of how one visionary leader&apos;s passion became a movement transforming legal education.
             </p>
           </div>
           
@@ -226,7 +226,7 @@ export default function AboutPage() {
                 </div>
                 
                 <blockquote className="text-lg text-gray-800 leading-relaxed italic mb-6">
-                  "Fatudimu Oluwaseun Raphael, a seasoned legal professional, founded the Republic of Scholars Initiative to bridge the gap between academic learning and career success. His vision was to create a community where law students could access mentorship, practical training, and career guidance from experienced professionals."
+                  &ldquo;Fatudimu Oluwaseun Raphael, a seasoned legal professional, founded the Republic of Scholars Initiative to bridge the gap between academic learning and career success. His vision was to create a community where law students could access mentorship, practical training, and career guidance from experienced professionals.&rdquo;
                 </blockquote>
                 
                 <p className="text-base text-gray-700 leading-relaxed">
@@ -320,7 +320,7 @@ export default function AboutPage() {
                 </div>
                 
                 <p className="text-gray-700 leading-relaxed text-center">
-                  A visionary leader with extensive experience in law and education, dedicated to mentoring the next generation of legal professionals. His passion for academic excellence and career development drives the initiative's mission.
+                  A visionary leader with extensive experience in law and education, dedicated to mentoring the next generation of legal professionals. His passion for academic excellence and career development drives the initiative&apos;s mission.
                 </p>
               </div>
             </div>
