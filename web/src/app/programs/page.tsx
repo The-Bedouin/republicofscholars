@@ -204,7 +204,7 @@ export default function ProgramsPage() {
             
             {/* Subheading */}
             <p className="text-lg text-gray-600 leading-relaxed mb-6 max-w-2xl mx-auto">
-              Don't just study law—master it. Connect with industry experts and launch your career with confidence.
+              Don&apos;t just study law—master it. Connect with industry experts and launch your career with confidence.
             </p>
             
             {/* CTA Buttons */}
