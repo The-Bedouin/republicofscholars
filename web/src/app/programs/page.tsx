@@ -117,26 +117,13 @@ export default function ProgramsPage() {
             
             {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 leading-tight mb-8">
-              Key benefits that set us apart from other firms
+              Our Unique Edge
             </h2>
           </div>
           
           {/* Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* First Benefit - Unlimited Consultations */}
-            <div className="text-center group">
-              <div className="bg-white/20 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-xl hover:bg-white/30 transition-all duration-300 hover:shadow-2xl">
-                <div className="w-16 h-16 rounded-xl bg-blue-600 text-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <i className="fas fa-comments text-2xl"></i>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Unlimited consultations</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Schedule as many strategy sessions as needed to develop your legal career path with personalized guidance from experienced professionals.
-                </p>
-              </div>
-            </div>
-            
-            {/* Second Benefit - Tailored Solutions */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* First Benefit - Tailored Solutions */}
             <div className="text-center group">
               <div className="bg-white/20 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-xl hover:bg-white/30 transition-all duration-300 hover:shadow-2xl">
                 <div className="w-16 h-16 rounded-xl bg-blue-600 text-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -149,7 +136,7 @@ export default function ProgramsPage() {
               </div>
             </div>
             
-            {/* Third Benefit - Expert Insights */}
+            {/* Second Benefit - Expert Insights */}
             <div className="text-center group">
               <div className="bg-white/20 backdrop-blur-md rounded-2xl p-8 border border-white/30 shadow-xl hover:bg-white/30 transition-all duration-300 hover:shadow-2xl">
                 <div className="w-16 h-16 rounded-xl bg-blue-600 text-white flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">

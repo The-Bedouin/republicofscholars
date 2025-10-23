@@ -35,12 +35,12 @@ export default function AboutPage() {
           
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
-            About Republic of Scholars Initiative
+            Shaping Legal Trailblazers
           </h1>
           
           {/* Subheading */}
           <p className="text-xl text-white/90 leading-relaxed max-w-4xl mx-auto mb-8">
-            An intellectual community dedicated to empowering law students through academic excellence, mentorship, and career development.
+            African leading student-led platform inspire, equip, and connect law students for success in a rapidly evolving global legal market.
           </p>
           
           {/* CTA */}
@@ -115,7 +115,7 @@ export default function AboutPage() {
               </div>
               
               <p className="text-base text-black leading-relaxed">
-                To foster academic excellence and career development for law students across Nigeria through mentorship, skill-building, and advocacy.
+                To empower law students through access to mentorship, internships, training, and professional development resources, fostering a community that supports growth, collaboration, and excellence.
               </p>
             </div>
             
@@ -129,7 +129,7 @@ export default function AboutPage() {
               </div>
               
               <p className="text-base text-black leading-relaxed">
-                To create a thriving community of empowered law professionals shaping Nigeria&apos;s legal landscape.
+                To build a generation of globally competitive and socially responsible legal professionals by bridging the gap between legal education and career opportunities.
               </p>
             </div>
           </div>
@@ -143,27 +143,32 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
               {[
                 {
-                  title: "Academic Excellence",
-                  description: "Committed to rigorous scholarship and intellectual growth that prepares students for legal practice.",
-                  icon: "fas fa-graduation-cap"
+                  title: "Excellence",
+                  description: "We uphold the highest standards in all we do, ensuring that every program, mentorship session, and resource meets the most rigorous academic and professional benchmarks.",
+                  icon: "fas fa-star"
                 },
                 {
-                  title: "Mentorship",
-                  description: "Building meaningful relationships between students and experienced legal professionals for guidance and support.",
+                  title: "Integrity",
+                  description: "We act with honesty and professionalism in all our interactions, building trust through transparent communication and ethical practices that set the foundation for successful legal careers.",
+                  icon: "fas fa-shield-alt"
+                },
+                {
+                  title: "Collaboration",
+                  description: "We grow together through partnership and mentorship, fostering a supportive community where students, mentors, and institutions work collectively towards shared success.",
                   icon: "fas fa-hands-helping"
                 },
                 {
-                  title: "Advocacy",
-                  description: "Developing confident advocates who can effectively represent clients and contribute to justice.",
-                  icon: "fas fa-gavel"
+                  title: "Innovation",
+                  description: "We create forward-thinking solutions for career growth, leveraging cutting-edge methodologies and technology to prepare students for the evolving demands of the legal profession.",
+                  icon: "fas fa-lightbulb"
                 },
                 {
-                  title: "Employability",
-                  description: "Ensuring students develop practical skills and professional networks for successful career transitions.",
-                  icon: "fas fa-briefcase"
+                  title: "Impact",
+                  description: "We measure success by the lives we transform, focusing on meaningful outcomes that empower students to become confident, competent, and socially responsible legal professionals.",
+                  icon: "fas fa-chart-line"
                 }
               ].map((value, index) => (
                 <div key={index} className="group">
@@ -209,14 +214,17 @@ export default function AboutPage() {
             <div>
               <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-xl border border-blue-100">
                 <div className="flex items-center gap-4 mb-6">
-                  {/* Founder placeholder headshot */}
+                  {/* Founder headshot */}
                   <div className="relative">
-                    <div className="h-20 w-20 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-lg">
-                      <div className="h-18 w-18 rounded-full bg-white flex items-center justify-center">
-                        <span className="text-2xl font-bold text-yellow-600">FR</span>
-                      </div>
+                    <div className="h-20 w-20 rounded-full overflow-hidden shadow-lg">
+                      <Image
+                        src="/seun.png"
+                        alt="Fatudimu Oluwaseun Raphael"
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-30"></div>
                   </div>
                   
                   <div>
@@ -226,7 +234,7 @@ export default function AboutPage() {
                 </div>
                 
                 <blockquote className="text-lg text-gray-800 leading-relaxed italic mb-6">
-                  &ldquo;Fatudimu Oluwaseun Raphael, a seasoned legal professional, founded the Republic of Scholars Initiative to bridge the gap between academic learning and career success. His vision was to create a community where law students could access mentorship, practical training, and career guidance from experienced professionals.&rdquo;
+                  &ldquo;Fatudimu Oluwaseun Raphael, a rising star in the legal profession, founded the Republic of Scholars Initiative to bridge the gap between academic learning and career success. His vision was to create a community where law students could access mentorship, practical training, and career guidance from experienced professionals.&rdquo;
                 </blockquote>
                 
                 <p className="text-base text-gray-700 leading-relaxed">
@@ -240,29 +248,34 @@ export default function AboutPage() {
               <div className="space-y-8">
                 {[
                   {
-                    year: "2020",
+                    year: "2023",
                     title: "Foundation",
                     description: "Republic of Scholars Initiative established with a clear vision for legal education transformation."
                   },
                   {
-                    year: "2021",
-                    title: "First Programs",
-                    description: "Launched mentorship and skill development programs across 5 universities."
-                  },
-                  {
-                    year: "2022",
-                    title: "Expansion",
-                    description: "Extended reach to 15+ universities and introduced advocacy training programs."
+                    year: "2023",
+                    title: "First Program",
+                    description: "Research and writing training for 100+ Elizade University Law Students."
                   },
                   {
                     year: "2023",
-                    title: "Recognition",
-                    description: "Received recognition from Nigerian Bar Association and other legal institutions."
+                    title: "Mentorship Session",
+                    description: "Mentorship session with a BigLaw Associate and Oxford Alumnus."
+                  },
+                  {
+                    year: "2023",
+                    title: "Expansion",
+                    description: "Expanded to 20+ universities across Nigeria."
                   },
                   {
                     year: "2024",
-                    title: "Impact",
-                    description: "Reached 500+ students with 95% success rate and 150+ job placements."
+                    title: "Global Reach",
+                    description: "Direct mentorship facilitation with associates at top law firms in Nigeria, the U.K. and the U.S.A."
+                  },
+                  {
+                    year: "2025",
+                    title: "Milestone Achievement",
+                    description: "Reached 1000+ students with comprehensive mentorship and training programs."
                   }
                 ].map((milestone, index) => (
                   <div key={index} className="flex items-start gap-4">
@@ -301,18 +314,21 @@ export default function AboutPage() {
             </p>
           </div>
           
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {/* Founder */}
             <div className="group">
               <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-xl border border-blue-100 h-full">
                 <div className="text-center mb-6">
                   <div className="relative mx-auto mb-4">
-                    <div className="h-24 w-24 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-lg mx-auto">
-                      <div className="h-22 w-22 rounded-full bg-white flex items-center justify-center">
-                        <span className="text-3xl font-bold text-yellow-600">FR</span>
-                      </div>
+                    <div className="h-24 w-24 rounded-full overflow-hidden shadow-lg mx-auto">
+                      <Image
+                        src="/seun.png"
+                        alt="Fatudimu Oluwaseun Raphael"
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-30"></div>
                   </div>
                   
                   <h3 className="text-2xl font-bold text-[#0e46a5] mb-2">Fatudimu Oluwaseun Raphael</h3>
@@ -325,29 +341,58 @@ export default function AboutPage() {
               </div>
             </div>
             
-            {/* Team Member Placeholders */}
+            {/* Team Members */}
             {[
               {
-                name: "Dr. Amina Hassan",
-                title: "Program Director",
-                initials: "AH",
-                bio: "Experienced in legal education, passionate about student success and curriculum development."
+                name: "Obafemi Oluwasijuanuwomi",
+                title: "Graphics Designer & Head of Research Team",
+                image: "/obafemi oluwasiju.png",
+                bio: "Creative designer and research lead, passionate about visual communication and academic research excellence."
               },
               {
-                name: "Chinedu Okonkwo",
-                title: "Mentorship Coordinator",
-                initials: "CO",
-                bio: "Dedicated to building meaningful mentor-student relationships and career guidance programs."
+                name: "Geoffrey Okorougo",
+                title: "Head of Communications and Logistics",
+                image: "/geoffrey okorugo.png",
+                bio: "Strategic communications expert and logistics coordinator, ensuring smooth operations and effective outreach."
+              },
+              {
+                name: "Olajumoke Adeyemi",
+                title: "Head of Partnership",
+                image: "/olajumoke adeyemi.png",
+                bio: "Partnership development specialist, building strategic alliances and collaborative relationships across the legal sector."
+              },
+              {
+                name: "Priscilla",
+                title: "Social Media Lead",
+                image: "/priscilla olamide.png",
+                bio: "Social media strategist and content creator, driving digital engagement and community building across platforms."
+              },
+              {
+                name: "Treasure",
+                title: "Social Media co-lead",
+                image: "/ayomipe treasure.png",
+                bio: "Co-leading social media initiatives with creative content development and community management expertise."
+              },
+              {
+                name: "Ayinde Hussein",
+                title: "Partnership Team co-lead",
+                image: "/ayinde hussein.png",
+                bio: "Supporting partnership development and strategic relationship building to expand our network and impact."
               }
             ].map((member, index) => (
               <div key={index} className="group">
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-full">
                   <div className="text-center mb-6">
                     <div className="relative mx-auto mb-4">
-                      <div className="h-24 w-24 rounded-full bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] flex items-center justify-center shadow-lg mx-auto">
-                        <span className="text-3xl font-bold text-white">{member.initials}</span>
+                      <div className="h-24 w-24 rounded-full overflow-hidden shadow-lg mx-auto">
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          width={96}
+                          height={96}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-20"></div>
                     </div>
                     
                     <h3 className="text-2xl font-bold text-[#0e46a5] mb-2">{member.name}</h3>

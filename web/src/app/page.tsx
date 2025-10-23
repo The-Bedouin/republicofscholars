@@ -24,13 +24,9 @@ export default function Home() {
               Shaping Legal Trailblazers
             </div>
             {/* Heading */}
-            <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-              Empowering Nigeria&apos;s next generation of legal professionals
+            <h1 className="mt-5 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-tight">
+              The African leading student-led platform that inspires, equips, and connects law students for success in a rapidly evolving global legal market.
             </h1>
-            {/* Subheading */}
-            <p className="mt-5 text-lg text-white/90 leading-relaxed max-w-2xl">
-              Practical mentorship, skills training, and pathways to employment—built for law students across Nigeria.
-            </p>
             {/* CTAs */}
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
               <Link href="/programs" className="inline-flex items-center gap-2 rounded-xl border-2 border-white text-white font-semibold px-6 py-3 hover:bg-white hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-yellow-500 group">
@@ -43,12 +39,11 @@ export default function Home() {
               </Link>
             </div>
             {/* Trust row */}
-            <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-white/80 text-sm">
+            <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 text-white/80 text-sm">
               {[
-                { icon: "fas fa-user-graduate", text: "500+ Students" },
+                { icon: "fas fa-user-graduate", text: "1000+ Members" },
                 { icon: "fas fa-chalkboard-teacher", text: "100+ Mentors" },
                 { icon: "fas fa-university", text: "20+ Universities" },
-                { icon: "fas fa-star", text: "95% Success rate" },
               ].map((it) => (
                 <div key={it.text} className="flex items-center gap-2">
                   <i className={`${it.icon}`} style={{ fontSize: '1rem', color: 'white', display: 'inline-block' }}></i>
@@ -170,7 +165,7 @@ export default function Home() {
               {/* Stats grid - Modern cards with subtle gradient and icons */}
               <div className="grid grid-cols-3 gap-4 text-center">
                 {[
-                  { k: "Students", v: "500+", icon: "fas fa-user-graduate" },
+                  { k: "Students", v: "300+", icon: "fas fa-user-graduate" },
                   { k: "Mentors", v: "100+", icon: "fas fa-user-group" },
                   { k: "Universities", v: "20+", icon: "fas fa-university" },
                 ].map((s) => (
@@ -214,8 +209,8 @@ export default function Home() {
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-8">
             {[
               {
-                number: "500+",
-                label: "Students Mentored",
+                number: "300+",
+                label: "Students Helped",
                 description: "Law students across 20+ universities",
                 icon: "fas fa-user-graduate",
                 color: "from-yellow-400 to-yellow-500"
