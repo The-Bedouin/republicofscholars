@@ -211,7 +211,7 @@ export default function Home() {
           </div>
           
           {/* Impact Stats Grid */}
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-8">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-8">
             {[
               {
                 number: "500+",
@@ -226,13 +226,6 @@ export default function Home() {
                 description: "Students achieving first-class degrees",
                 icon: "fas fa-trophy",
                 color: "from-green-400 to-green-500"
-              },
-              {
-                number: "150+",
-                label: "Job Placements",
-                description: "Graduates in top law firms",
-                icon: "fas fa-briefcase",
-                color: "from-blue-400 to-blue-500"
               },
               {
                 number: "20+",
