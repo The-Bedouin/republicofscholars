@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import MobileMenu from "./MobileMenu";
+import BurgerMenu from "./BurgerMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,9 +76,10 @@ export default function RootLayout({
               <li><Link className="text-black !text-black hover:text-[--color-brand] transition-colors duration-200 py-2 px-1" href="/contact">Contact</Link></li>
               <li><Link className="ml-4 inline-flex items-center justify-center rounded-full px-6 py-2.5 bg-[--color-gold] text-white font-semibold hover:bg-[color-mix(in_oklab,_var(--color-gold),_black_12%)] focus:outline-none focus:ring-2 focus:ring-[--color-gold] transition-all duration-200 shadow-sm hover:shadow-md" href="/donate">Donate</Link></li>
             </ul>
-            <MobileMenu />
           </nav>
         </header>
+        {/* Floating mobile burger - visible on small screens only */}
+        <BurgerMenu />
         <main id="main" className="min-h-[calc(100dvh-8rem)]">
           {children}
         </main>
