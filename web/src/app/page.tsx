@@ -109,7 +109,7 @@ export default function Home() {
                 },
                 {
                   title: "Career readiness",
-                  desc: "Clinics, moots, and employability coaching for real-world impact.",
+                  desc: "Collaboration with law firms and organizations to provide internship opportunities to members",
                   icon: "fas fa-briefcase",
                 },
                 {
@@ -216,9 +216,9 @@ export default function Home() {
                 color: "from-yellow-400 to-yellow-500"
               },
               {
-                number: "95%",
+                number: "100%",
                 label: "Success Rate",
-                description: "Students achieving first-class degrees",
+                description: "Students improving on employability",
                 icon: "fas fa-trophy",
                 color: "from-green-400 to-green-500"
               },
@@ -253,7 +253,7 @@ export default function Home() {
           </div>
           
           {/* Impact Stories Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+          <div className="grid gap-8 md:grid-cols-2 justify-center mb-16">
             {[
               {
                 title: "Academic Excellence",
@@ -263,15 +263,8 @@ export default function Home() {
                 color: "from-green-500 to-green-600"
               },
               {
-                title: "Career Readiness",
-                description: "85% of our graduates secure employment within 6 months of graduation",
-                icon: "fas fa-rocket",
-                metric: "85% Employment",
-                color: "from-blue-500 to-blue-600"
-              },
-              {
                 title: "Leadership Development",
-                description: "Over 200 students have taken on leadership roles in their universities",
+                description: "Imbibing leadership skills in students through conscious training",
                 icon: "fas fa-crown",
                 metric: "200+ Leaders",
                 color: "from-yellow-500 to-yellow-600"
@@ -327,7 +320,7 @@ export default function Home() {
             </p>
             <Link 
               href="/programs" 
-              className="inline-flex items-center gap-3 bg-white text-[#0e46a5] font-bold text-lg px-8 py-4 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0e46a5] transition-all shadow-xl hover:shadow-2xl group"
+              className="inline-flex items-center gap-3 bg-[#0e46a5] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#1a5bb8] focus:outline-none focus:ring-2 focus:ring-[#0e46a5] focus:ring-offset-2 transition-all shadow-xl hover:shadow-2xl group"
             >
               Join Our Programs
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">
@@ -364,13 +357,15 @@ export default function Home() {
                   <div className="mt-8 flex items-center gap-4">
                     {/* Circular portrait */}
                     <div className="relative">
-                      <div className="h-16 w-16 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-lg">
-                        <div className="h-14 w-14 rounded-full bg-white flex items-center justify-center">
-                          <span className="text-2xl font-bold text-yellow-600">FR</span>
-                        </div>
+                      <div className="h-16 w-16 rounded-full overflow-hidden shadow-lg">
+                        <Image
+                          src="/seun.png"
+                          alt="Fatudimu Oluwaseun Raphael"
+                          width={64}
+                          height={64}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      {/* Gold ring */}
-                      <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-30"></div>
                     </div>
                     
                     <div>
@@ -469,29 +464,6 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  {/* Rating */}
-                  <div className="flex items-center gap-1 mb-3">
-                    {[...Array(mentor.rating)].map((_, i) => (
-                      <i key={i} className="fas fa-star text-yellow-500 text-xs"></i>
-                    ))}
-                  </div>
-                  
-                  {/* Author */}
-                  <div className="flex items-center gap-2">
-                    {/* Avatar */}
-                    <div className="relative">
-                      <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#0e46a5] to-[#1a5bb8] flex items-center justify-center shadow-sm">
-                        <span className="text-white font-bold text-xs">{mentor.image}</span>
-                      </div>
-                      <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 opacity-20"></div>
-                    </div>
-                    
-                    <div className="flex-1">
-                      <div className="font-bold text-[#0e46a5] text-sm">{mentor.name}</div>
-                      <div className="text-gray-600 font-medium text-xs">{mentor.title}</div>
-                      <div className="text-xs text-blue-600 font-semibold">{mentor.company} • {mentor.experience}</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             ))}
@@ -538,7 +510,7 @@ export default function Home() {
           </div>
           
           {/* Partners Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+          <div className="grid gap-8 md:grid-cols-2 justify-center mb-16">
             {[
               {
                 category: "Universities",
@@ -554,7 +526,7 @@ export default function Home() {
                 color: "from-blue-500 to-blue-600"
               },
               {
-                category: "Law Firms",
+                category: "Interns at",
                 partners: [
                   "Templars Law Firm",
                   "Banwo & Ighodalo",
@@ -565,19 +537,6 @@ export default function Home() {
                 ],
                 icon: "fas fa-gavel",
                 color: "from-green-500 to-green-600"
-              },
-              {
-                category: "Organizations",
-                partners: [
-                  "Nigerian Bar Association",
-                  "International Law Students Association",
-                  "Young Lawyers Forum",
-                  "Legal Aid Council",
-                  "Nigerian Law School",
-                  "African Legal Network"
-                ],
-                icon: "fas fa-handshake",
-                color: "from-purple-500 to-purple-600"
               }
             ].map((category, index) => (
               <div key={index} className="group">
@@ -608,50 +567,6 @@ export default function Home() {
             ))}
           </div>
           
-          {/* Recognition & Awards */}
-          <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-100">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-[#0e46a5] mb-4">Recognition & Awards</h3>
-              <p className="text-lg text-gray-600">Our commitment to excellence has been recognized by leading institutions</p>
-            </div>
-            
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              {[
-                {
-                  award: "Best Legal Education Initiative 2023",
-                  organization: "Nigerian Bar Association",
-                  icon: "fas fa-trophy",
-                  color: "from-yellow-400 to-yellow-500"
-                },
-                {
-                  award: "Excellence in Mentorship",
-                  organization: "Legal Aid Council",
-                  icon: "fas fa-medal",
-                  color: "from-blue-400 to-blue-500"
-                },
-                {
-                  award: "Outstanding Student Support",
-                  organization: "Ministry of Education",
-                  icon: "fas fa-star",
-                  color: "from-green-400 to-green-500"
-                },
-                {
-                  award: "Innovation in Legal Training",
-                  organization: "African Legal Network",
-                  icon: "fas fa-lightbulb",
-                  color: "from-purple-400 to-purple-500"
-                }
-              ].map((award, index) => (
-                <div key={index} className="text-center group">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r ${award.color} text-white shadow-lg mb-4 group-hover:scale-110 transition-transform`}>
-                    <i className={`${award.icon} text-2xl`}></i>
-                  </div>
-                  <h4 className="font-bold text-[#0e46a5] mb-2 text-lg">{award.award}</h4>
-                  <p className="text-gray-600 text-sm">{award.organization}</p>
-                </div>
-              ))}
-            </div>
-          </div>
           
           {/* Call to Action */}
           <div className="text-center mt-16">
@@ -661,7 +576,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact" 
-                className="inline-flex items-center gap-3 border-2 border-[#0e46a5] text-[#0e46a5] font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#0e46a5] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#0e46a5] focus:ring-offset-2 transition-all group"
+                className="inline-flex items-center gap-3 bg-[#0e46a5] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#1a5bb8] focus:outline-none focus:ring-2 focus:ring-[#0e46a5] focus:ring-offset-2 transition-all group"
               >
                 Learn More
                 <i className="fas fa-info-circle group-hover:scale-110 transition-transform"></i>
@@ -694,14 +609,21 @@ export default function Home() {
               Take the first step towards academic and career excellence. Connect with mentors, access resources, and build your legal career with confidence.
             </p>
             
-            {/* CTA Button */}
-            <div className="flex justify-center items-center mb-12">
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Link 
                 href="/contact" 
                 className="inline-flex items-center gap-3 bg-[#0e46a5] text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#1a5bb8] focus:outline-none focus:ring-2 focus:ring-[#0e46a5] focus:ring-offset-2 transition-all shadow-xl hover:shadow-2xl group min-w-[200px] justify-center"
               >
                 Get Started
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform"><path d="M7 17L17 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/><path d="M8 7H17V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+              </Link>
+              <Link 
+                href="/contact" 
+                className="inline-flex items-center gap-3 bg-green-600 text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 transition-all shadow-xl hover:shadow-2xl group min-w-[200px] justify-center"
+              >
+                Join our WhatsApp Community
+                <i className="fab fa-whatsapp group-hover:scale-110 transition-transform"></i>
               </Link>
             </div>
           </div>

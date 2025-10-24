@@ -88,13 +88,15 @@ export default function RootLayout({
             <div className="grid gap-10 md:grid-cols-12">
               <div className="md:col-span-5">
                 <div className="flex items-center gap-3 text-xl font-semibold text-white">
-                  <Image 
-                    src="/republic_of_scholars_logo.png" 
-                    alt="Republic of Scholars Logo" 
-                    width={28} 
-                    height={28} 
-                    className="object-contain"
-                  />
+                  <div className="bg-white rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                    <Image 
+                      src="/republic_of_scholars_logo.png" 
+                      alt="Republic of Scholars Logo" 
+                      width={24} 
+                      height={24} 
+                      className="object-contain"
+                    />
+                  </div>
                   Republic of Scholars
                 </div>
                 <p className="mt-4 text-sm text-white/90 leading-relaxed">
